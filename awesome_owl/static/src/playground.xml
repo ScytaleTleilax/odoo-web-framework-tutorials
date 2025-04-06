@@ -8,8 +8,10 @@
                         
                         <div class='w-50 text-center'>hello world</div>
                                 
-                        <div class=" w-50 p-2 m-2 text-center border d-inline-block">
+                        <div class=" w-50 p-2 m-2 text-center border">
+                            <Card title = "'myTitle1'" content = "'myContent1'"/>
                             <Counter/>
+                            <Card title = "'myTitle2'" content = "'myContent2'"/>
                             <Counter/>
                         </div>
                     </div>
