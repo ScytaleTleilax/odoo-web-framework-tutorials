@@ -4,16 +4,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4 offset-4">
-                    <div class="p-3 border d-flex justify-content-center align-items-center">                        
+                    <div class="p-3 border d-flex">                        
                         
-                        <div class='w-50 text-center'>hello world</div>
+                        <div class='text-center'>hello world</div>
                                 
-                        <div class=" w-50 p-2 m-2 text-center border">
-                            <Card title = "'myTitle1'" content = "'myContent1'"/>
-                            <Counter/>
-                            <Card title = "'myTitle2'" content = "'myContent2'"/>
-                            <Counter/>
+                        <div class="p-2 m-2 border">
+                            <Counter onChange.bind = "incrementSum"/>
+                            <Counter onChange.bind = "incrementSum"/>
+                            <div class='text-center'>The sum is: <t t-esc="sum.value"/></div>
                         </div>
+
                     </div>
                 </div>
             </div>
